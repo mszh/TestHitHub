@@ -8,6 +8,7 @@
 int main()
 {
   std::cout << "Hello git";
+  std::cout << "\n New code for git";
   return 0;
 }
 
