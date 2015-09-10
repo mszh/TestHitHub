@@ -9,6 +9,7 @@ int main()
 {
   std::cout << "Hello git";
   std::cout << "\n New code for git";
+  std::cout << "Test remove commit";
   return 0;
 }
 
