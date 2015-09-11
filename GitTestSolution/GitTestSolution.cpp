@@ -14,6 +14,7 @@ int main()
   // hotfix2
   int b = 5;
 
+  int a = 20;
 
   // only for iss53
   for (int i = 0; i < 10; i++)
