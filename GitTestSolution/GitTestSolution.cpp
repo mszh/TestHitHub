@@ -15,6 +15,8 @@ int main()
   int b = 5;
 
   int a = 20;
+  // rebasing test
+  float c = 5.1 * 3;
 
   // only for iss53
   for (int i = 0; i < 10; i++)
