@@ -11,11 +11,8 @@ void ThreadTest()
   std::cout << "Do nothing";
 }
 
-int main(int num, const char *args)
+int main()
 {
-  if (num == 2)
-    return 0;
-
   std::cout << "Hello git";
   std::cout << "\n New code for git";
   std::cout << "Test remove commit";
