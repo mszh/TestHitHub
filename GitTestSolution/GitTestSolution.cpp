@@ -3,13 +3,25 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <thread>
 
 
-int main()
+void ThreadTest()
 {
+  std::cout << "Do nothing";
+}
+
+int main(int num, const char *args)
+{
+  if (num == 2)
+    return 0;
+
   std::cout << "Hello git";
   std::cout << "\n New code for git";
   std::cout << "Test remove commit";
+
+  std::thread t(ThreadTest);
+  t.join();
 
   // hotfix2
   int b = 5;
