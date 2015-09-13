@@ -11,14 +11,18 @@ void ThreadTest()
   std::cout << "Do nothing";
 }
 
-int main()
+int main(int num, const char * args)
 {
-  std::cout << "Hello git";
-  std::cout << "\n New code for git";
-  std::cout << "Test remove commit";
+  static int i = 0;
+  i++;
+  std::cout << "Start main"<< std::endl;
+  std::cout << "i= " << i << std::endl;
 
   std::thread t(ThreadTest);
   t.join();
+
+  std::thread t2(main, 2, "");
+  t2.join();
 
   // hotfix2
   int b = 5;
