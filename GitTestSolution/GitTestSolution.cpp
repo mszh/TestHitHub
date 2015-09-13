@@ -21,11 +21,8 @@ int main()
   std::thread t(ThreadTest);
   t.join();
 
-  std::thread t2(main, 2, "");
+  std::thread t2(main);
   t2.join();
-
-  // hotfix2
-  int b = 5;
 
   int a = 20;
   // rebasing test
