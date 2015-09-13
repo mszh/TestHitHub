@@ -11,7 +11,7 @@ void ThreadTest()
   std::cout << "Do nothing";
 }
 
-int main(int num, const char * args)
+int main()
 {
   static int i = 0;
   i++;
