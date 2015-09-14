@@ -13,10 +13,7 @@ void ThreadTest()
 
 int main()
 {
-  static int i = 0;
-  i++;
-  std::cout << "Start main"<< std::endl;
-  std::cout << "i= " << i << std::endl;
+  int z = 90;
 
   std::thread t(ThreadTest);
   t.join();
