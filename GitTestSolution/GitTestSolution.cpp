@@ -18,19 +18,9 @@ int main()
   std::thread t(ThreadTest);
   t.join();
 
-  std::thread t2(main);
-  t2.join();
-
-  int a = 20;
-  // rebasing test
-  float c = 5.1 * 3;
-
-  // only for iss53
-  for (int i = 0; i < 10; i++)
-  {
-    std::cout << "Iss53 i = " << i;
-    std::cout << std::endl;
-  }
+  int k = 10;
+  
+  int b = 0;
 
   return 0;
 }
